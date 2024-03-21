@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 
-let title = "About Soraia Soares - UX/UI Designer"
+let title = "About Soraia Soares - UX Strategy"
 ---
 
 <Layout title={title}>
@@ -12,7 +12,7 @@ let title = "About Soraia Soares - UX/UI Designer"
 		<section class="about-section" >
 			<div class="summary">
 				<ul class="js-sticky">
-					<li><a class="stickyLink" onclick="scrollToTarget('section-about', '40', this)">About me in 1 seconds</a></li>
+					<li><a class="stickyLink" onclick="scrollToTarget('section-about', '40', this)">About me in 10 seconds</a></li>
 					<li><a class="stickyLink" onclick="scrollToTarget('section-journey', '40', this)">My journey</a></li>
 					<li><a class="stickyLink" onclick="scrollToTarget('section-love', '40', this)">Love to...</a></li>
 					<li><a class="stickyLink" onclick="scrollToTarget('mailMe', '40', this)">Get in touch</a></li>
@@ -21,13 +21,13 @@ let title = "About Soraia Soares - UX/UI Designer"
 			<div class="about-me-column">
 				<img class="me" src="/resources/images/Me.png">
 				<div class="about-me-10sec">
-					<h2><a id="section-about"><span>About me</span> in 10 seconds</a></h2>
-					<p>Hi! 👋 I'm Soraia, and I am a passionate human-centered designer with 5+ years of experience in the design industry. After working in Brand Strategy & Design, I decided to transition to UX/UI Design to pursue my passion for creating meaningful and impactful products for users (and the world 🌍).</p>
-					<p>I'm hungry to learn more (and delicious food too 😋) and love to tackle new challenges, which constantly provides me with a fresh perspective on the vast world of user experience.</p>
+					<h2><a id="section-about"><span class="purple">About me</span> in 10 seconds</a></h2>
+					<p>Hi! 👋 I'm Soraia, a passionate human-centered designer with over 6 years of experience in the design industry. Having previously worked in Brand Strategy & Design, I made the transition to UX Design to pursue my belief that every exceptional experience begins with a solid strategy.</p>
+					<p>I have a hunger for learning (and delicious food too 😋) and love to tackle new challenges, which constantly provides me with a fresh perspective on the vast world of user experience.</p>
 					<p>Extra info: 🧝🏻‍♀️‍ LOTR fan (know the trilogy by heart), ⚽️ football lover, 🎨 failed artist but still like to draw and paint, 📸 photographer by chance.</p> 
 				</div>
 				<div class="my-journey">
-					<h2><a id="section-journey"><span>My</span> journey</a></h2>
+					<h2><a id="section-journey"><span class="purple">My</span> journey</a></h2>
 					<div class="past">
 						<h3>Past</h3>
 							<ul>
@@ -46,9 +46,9 @@ let title = "About Soraia Soares - UX/UI Designer"
 							<li>User Experience</li>
 							<li>User Research</li>
 							<li>Interface Design</li>
-							<li>Websute & Mobile</li>
+							<li>Website & Mobile</li>
 							<li>Accessibility</li>
-							<li>Visual Design</li>
+							<li>Business Strategy</li>
 						</ul>
 					</div>
 					<div class="future">
@@ -61,7 +61,7 @@ let title = "About Soraia Soares - UX/UI Designer"
 					</div>
 				</div>
 				<div class="love-to">
-					<h2><a id="section-love"><span>Love</span> to...</a></h2>
+					<h2><a id="section-love"><span class="purple">Love</span> to...</a></h2>
 					<div id="hobbies">
 						<div class="hobbie travel">
 						  <input type="radio" name="choice" id="choice1" value="travel" />
@@ -100,8 +100,14 @@ let title = "About Soraia Soares - UX/UI Designer"
 
 
 <style>
+
+h2 {
+  font-size: 36px;
+}
+
 h3{
 	transition: all ease-in-out .2s;
+  font-size: 28px;
 }
 h3:hover {
 	color: #7E7EE0;
@@ -118,6 +124,10 @@ h3:hover {
   position: relative;
   margin-top: 98px;
   justify-content: space-between;
+}
+
+.about-section p {
+  margin-bottom: 16px;
 }
 
 .summary {
@@ -234,6 +244,7 @@ h3:hover {
 .past li {
   display: inline-block;
   margin-right: 56px;
+  margin-bottom: 12px;
 }
 
 .past li:last-child {
@@ -263,6 +274,7 @@ h3:hover {
 .present li {
   display: inline-block;
   margin-right: 56px;
+  margin-bottom: 12px;
 }
 
 .present li:last-child {
@@ -293,6 +305,7 @@ h3:hover {
 .future li {
   display: inline-block;
   margin-right: 56px;
+  margin-bottom: 12px;
 }
 
 .future li:last-child {

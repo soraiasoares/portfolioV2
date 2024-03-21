@@ -235,6 +235,10 @@ span {
   justify-content: space-between;
 }
 
+.about-section p {
+  margin-bottom: 16px;
+}
+
 .summary {
   position: relative;
   width: 30%;
