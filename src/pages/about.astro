@@ -1,0 +1,415 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+
+let title = "About Soraia Soares - UX/UI Designer"
+---
+
+<Layout title={title}>
+	<Header title={title} introduction={ false }></Header>
+
+	<main class="container" data-sticky-container>
+		<section class="about-section" >
+			<div class="summary">
+				<ul class="js-sticky">
+					<li><a class="stickyLink" onclick="scrollToTarget('section-about', '40', this)">About me in 1 seconds</a></li>
+					<li><a class="stickyLink" onclick="scrollToTarget('section-journey', '40', this)">My journey</a></li>
+					<li><a class="stickyLink" onclick="scrollToTarget('section-love', '40', this)">Love to...</a></li>
+					<li><a class="stickyLink" onclick="scrollToTarget('mailMe', '40', this)">Get in touch</a></li>
+				</ul>
+			</div>
+			<div class="about-me-column">
+				<img class="me" src="/resources/images/Me.png">
+				<div class="about-me-10sec">
+					<h2><a id="section-about"><span>About me</span> in 10 seconds</a></h2>
+					<p>Hi! 👋 I'm Soraia, and I am a passionate human-centered designer with 5+ years of experience in the design industry. After working in Brand Strategy & Design, I decided to transition to UX/UI Design to pursue my passion for creating meaningful and impactful products for users (and the world 🌍).</p>
+					<p>I'm hungry to learn more (and delicious food too 😋) and love to tackle new challenges, which constantly provides me with a fresh perspective on the vast world of user experience.</p>
+					<p>Extra info: 🧝🏻‍♀️‍ LOTR fan (know the trilogy by heart), ⚽️ football lover, 🎨 failed artist but still like to draw and paint, 📸 photographer by chance.</p> 
+				</div>
+				<div class="my-journey">
+					<h2><a id="section-journey"><span>My</span> journey</a></h2>
+					<div class="past">
+						<h3>Past</h3>
+							<ul>
+								<li>Branding</li>
+								<li>Visual Identity</li>
+								<li>Editorial</li>
+								<li>Workshop</li>
+								<li>Brand Strategy</li>
+								<li>Social Media</li>
+								<li>Templates</li>
+							</ul>
+					</div>
+					<div class="present">
+						<h3>Present</h3>
+						<ul>
+							<li>User Experience</li>
+							<li>User Research</li>
+							<li>Interface Design</li>
+							<li>Websute & Mobile</li>
+							<li>Accessibility</li>
+							<li>Visual Design</li>
+						</ul>
+					</div>
+					<div class="future">
+						<h3>Future</h3>
+						<ul>
+							<li>Sustainable Design</li>
+							<li>Product Design</li>
+							<li>Front-End</li>
+						</ul>
+					</div>
+				</div>
+				<div class="love-to">
+					<h2><a id="section-love"><span>Love</span> to...</a></h2>
+					<div id="hobbies">
+						<div class="hobbie travel">
+						  <input type="radio" name="choice" id="choice1" value="travel" />
+						  <label for="choice1" >Experience The World ✈️</label>
+						  <img src="resources/images/Travel.png"/>
+						</div>
+						<div class="hobbie pet">
+							<input type="radio" name="choice" id="choice2" value="pet" />
+							<label for="choice2" >Play with Jade 🐶</label>
+							<img src="/resources/images/Jade.png" />
+						</div>
+						<div class="hobbie gifts">
+							<input type="radio" name="choice" id="choice3" value="gifts" />
+							<label for="choice3" >Be Spoiled by Clients 🎁</label>
+							<img src="/resources/images/Clients.png" />
+						</div>
+						<div class="hobbie post">
+							<input type="radio" name="choice" id="choice4" value="post" />
+							<label for="choice4" >Create Content ✏️</label>
+							<img src="/resources/images/Content.png" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	
+</Layout>
+
+
+<script is:inline src="/resources/js/sticky.min.js"></script>
+
+<script is:inline>
+  var sticky = new Sticky('.js-sticky');
+</script>
+
+
+<style>
+h3{
+	transition: all ease-in-out .2s;
+}
+h3:hover {
+	color: #7E7EE0;
+}
+.container{
+  width: 100%;
+  max-width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about-section {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin-top: 98px;
+  justify-content: space-between;
+}
+
+.summary {
+  position: relative;
+  width: 30%;
+}
+
+.summary a {
+  border: 0.5px solid #232C33;
+  border-radius: 8px;
+  padding: 16px;
+  transition: all ease-in-out .15s;
+  cursor: pointer;
+}
+
+.summary a:hover {
+  background-color: #ebebff;
+}
+
+.summary ul{
+  margin: 40px 0;
+}
+
+.summary li {
+  margin-bottom: 48px;
+  list-style: none;	
+}
+
+.about-me-column {
+  position: relative;
+  width: 60%;
+  max-width: 650px;
+}
+
+.me {
+  width: 650px;
+  height: auto;
+  border: 0.5px solid #232C33;
+  padding: 36px;
+  border-radius: 32px;
+  margin-bottom: 48px;
+}
+
+.about-me-10sec, .love-to, .my-journey{
+  padding-top: 24px;
+  margin-top: 24px;
+}
+
+.love-to{
+  margin-bottom: 40px;
+}
+
+.about-me-10sec {
+  /* padding-top: 48px; */
+}
+
+#section-about {
+  font-family: 'ClashDisplay-Semibold';
+}
+
+.my-journey {
+  /* padding-top: 48px; */
+}
+
+#section-journey {
+  font-family: 'ClashDisplay-Semibold';
+}
+
+.love-to {
+  /* padding-top: 48px; */
+}
+
+#section-love {
+  font-family: 'ClashDisplay-Semibold';
+}
+
+.about-me-10sec h2 {
+  border-bottom: 0.5px solid #232C33;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+}
+
+.my-journey h2 {
+  border-bottom: 0.5px solid #232C33;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+}
+
+.love-to h2 {
+  border-bottom: 0.5px solid #232C33;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+}
+
+
+/* Past */
+
+.past {
+  border: 0.5px solid #232C33;
+  border-radius: 16px;
+  margin-bottom: 32px;
+}
+
+.past h3 {
+  border-bottom: 0.5px solid #232C33;
+  padding: 24px;
+  border-radius: 16px;
+}
+
+.past ul {
+  padding: 24px;
+}
+
+.past li {
+  display: inline-block;
+  margin-right: 56px;
+}
+
+.past li:last-child {
+    margin-right: 0;
+}
+
+
+/* Present */
+
+.present {
+  border: 0.5px solid #232C33;
+  border-radius: 16px;
+  margin-bottom: 32px;
+
+}
+
+.present h3 {
+  border-bottom: 0.5px solid #232C33;
+  padding: 24px;
+  border-radius: 16px;
+}
+
+.present ul {
+  padding: 24px;
+}
+
+.present li {
+  display: inline-block;
+  margin-right: 56px;
+}
+
+.present li:last-child {
+    margin-right: 0;
+}
+
+
+/* Future */
+
+.future {
+  border: 0.5px solid #232C33;
+  border-radius: 16px;
+  margin-bottom: 32px;
+
+}
+
+.future h3 {
+  border-bottom: 0.5px solid #232C33;
+  padding: 24px;
+  border-radius: 16px;
+}
+
+
+.future ul {
+  padding: 24px;
+}
+
+.future li {
+  display: inline-block;
+  margin-right: 56px;
+}
+
+.future li:last-child {
+    margin-right: 0;
+}
+
+
+/* Love to... */
+
+#hobbies{
+  position: relative;
+  width: 100%;
+  height: 440px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+#hobbies img{
+  position: absolute;
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+  max-height: 440px;
+  opacity: 0;
+  top: 0;
+  right: 0;
+}
+
+#hobbies input{
+  display: none;
+}
+
+#hobbies label{
+  position: relative;
+  display: block;
+  color: #232C33;
+  font-family: 'ClashDisplay-Semibold';
+  font-size: 32px;
+  margin-top: 44px;
+  z-index: 99;
+  cursor: pointer;
+  transition: all ease-in .2s;
+}
+
+#hobbies.active label{
+  opacity: .3;
+}
+#hobbies.active label.active{
+  opacity: 1;
+}
+
+@media screen and (max-width: 700px){
+  #hobbies input:checked + label{
+    color: #232C33;
+  }
+
+  #hobbies input:checked + label + img{
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 701px){
+  #hobbies input:hover + label{
+    color: #232C33;
+  }
+
+  #hobbies input:hover + label + img{
+    opacity: 1;
+  }
+}
+
+</style>
+
+<script is:inline>
+
+function scrollToTarget(elementID, offset, el) {
+      var element = document.getElementById(elementID);
+      var elementPosition = element.getBoundingClientRect().top;
+      var offsetPosition = elementPosition + window.pageYOffset - offset;
+      
+      window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+      });
+
+      toggleAboutMeSticky(el)
+  }
+
+  function toggleAboutMeSticky(el){
+    document.querySelectorAll('.stickyLink').forEach(
+    (element, index, array) => {
+        element.classList.remove('active')
+    })
+    el.classList.add('active')
+  }
+
+  function resetHobbies(){
+    document.querySelector('.hobbie label.active').classList.remove('active');
+    document.getElementById('hobbies').classList.remove('active')
+  }
+
+  document.querySelectorAll('.hobbie label').forEach((el) => {
+    el.addEventListener('mouseenter', function(){
+      document.getElementById('hobbies').classList.add('active');
+      
+      let otherActive = document.querySelector('.hobbie label.active');
+      if (otherActive){
+        otherActive.classList.remove('active');
+      }
+      el.classList.add('active');
+    })
+    
+    el.addEventListener('mouseleave', function(){
+      resetHobbies();
+    })
+  })
+
+</script>

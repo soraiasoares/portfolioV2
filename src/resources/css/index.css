@@ -1,0 +1,565 @@
+/* font family */
+
+@font-face {
+    font-family: 'ClashDisplay-Medium';
+    src: url('/resources/fonts/ClashDisplay-Medium.woff2') format('woff2'),
+         url('/resources/fonts/ClashDisplay-Medium.woff') format('woff');
+         font-weight: 500;
+         font-display: swap;
+         font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'ClashDisplay-Semibold';
+    src: url('/resources/fonts/ClashDisplay-Semibold.woff2') format('woff2'),
+         url('/resources/fonts/ClashDisplay-Semibold.woff') format('woff');
+         font-weight: 600;
+         font-display: swap;
+         font-style: normal;
+  }
+
+@font-face {
+    font-family: 'proxbold';
+    src: url('/resources/fonts/prox-bold-webfont.woff2') format('woff2'),
+         url('/resources/fonts/prox-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'proxregular';
+    src: url('/resources/fonts/prox-regular-webfont.woff2') format('woff2'),
+         url('/resources/fonts/prox-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+ /* Reset */
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    6. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    7. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    8. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  a {
+    color: #F5EFED;
+    text-decoration: none;
+  }
+
+  span {
+    font-family: 'ClashDisplay-Semibold';
+  }
+
+
+
+/* css */
+
+  * {
+    font-family: 'proxregular', Helvetica, Arial, sans-serif;
+  }
+
+  
+  
+h1, h3 {
+    font-family: 'ClashDisplay-Medium', serif;
+  }
+
+.logo, h2 {
+    font-family: 'ClashDisplay-Semibold', serif;
+}
+  
+h1 {
+    color: #7E7EE0;
+    font-size: 96px;
+  }
+  
+h2 {
+    color: #232C33;
+}
+
+.logo {
+    font-size: 28px;
+    position: absolute;
+    top: 58px;
+    left: 95px;
+}
+  
+p,li {
+    font-size: 18px;
+    color: #F5EFED;
+  }
+
+/*  
+.line {
+    border-bottom: #F5EFED;
+    border-width: 0.5px;
+    border-bottom-style: solid;
+    width: 488.9px;
+    padding-top: 58px;
+    margin-left: 50px;
+}
+*/
+
+.circular-text {
+    width: 20%;
+    height: auto; 
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+}
+
+.photo {
+    height: 840px;
+    object-fit: cover;
+}
+
+.header {
+    height: 840px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    background-color: #232C33;
+}
+
+.header-left {
+    position: relative;
+}
+
+.header-right {
+    /* background-color: #232C33 ; */
+    position: relative;
+    width: 50%;
+}
+
+.menu {
+    list-style: none;
+    margin-top: 58px;
+    padding-bottom: 58px;
+    border-bottom: 0.5px solid #F5EFED;
+    width: 500px;
+    padding-left: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 48px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.ideate-il img {
+  height: 140px;
+  position: absolute;
+  right: 30%;
+  top: 250px;
+}
+
+.hello-pillshape {
+    background-color: #7E7EE0;
+    font-size: 46px;
+    padding: 8px;
+    text-align: center;
+    width: 264px;
+    border-radius: 50px;
+    margin-top: 150px;
+}
+
+.introduction {
+    padding-top: 24px;
+    font-family: 'proxbold';
+    border-top: 0.5px solid #F5EFED;
+    width: 500px;
+    padding-left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    bottom: 200px;
+    left: 0;
+    right: 0;
+}
+
+.nome {
+    position: absolute;
+    right: 30%;
+    width: 665px;
+}
+
+.menu a {
+  text-decoration: none;
+}
+
+a:active {
+  color: #7E7EE0;
+}
+
+.active {
+  color: #7E7EE0;
+  font-weight: bold;
+}
+
+.logo a {
+  color: #232C33;
+  font-family: 'ClashDisplay-Semibold', serif;
+}
+
+.isDisabled {
+  cursor: not-allowed;
+  opacity: 1;
+}
+.isDisabled > a {
+  color: #c1c1c1;
+  display: inline-block;  /* For IE11/ MS Edge bug */
+  pointer-events: none;
+  text-decoration: none;
+}
+
+/* Design Philosophy */
+
+.purpose {
+  padding-top: 98px;
+}
+
+.illustrations {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.brain-il {
+  height: 140px;
+  position: absolute;
+  left: 0px;
+}
+
+.flow-il {
+  height: 140px;
+  position: absolute;
+  right: 0px;
+}
+
+.purpose h2 {
+  font-size: 48px;
+  text-align: center;
+  line-height: normal;
+}
+
+.meaning {
+  color: #232C33;
+  text-align: center;
+  font-family: 'proxbold';
+  font-size: 19px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 16px;
+  border-top: 0.5px solid #232C33;
+  width: 500px;
+  padding-top: 16px;
+}
+
+span {
+  color: #7E7EE0;
+  
+}
+
+.design-philosophy {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 1248px;
+  text-align: center;
+  margin-top: 54px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 0.5px solid #232C33;
+  border-bottom: 0.5px solid #232C33;
+  padding-bottom: 16px;
+}
+
+.research h3, .strategy h3, .design h3 {
+  color: #7E7EE0;
+  font-family: 'ClashDisplay-Medium';
+  font-weight:lighter;
+  font-size: 36px;
+}
+
+.research p, .strategy p, .design p {
+  color: #232C33;
+  text-align: center;
+  line-height: normal;
+}
+
+.research, .strategy, .design {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  border-right: 0.5px solid #232C33;
+}
+
+.design {
+  border-right: 0;
+}
+
+/* My Work */
+
+.my-work {
+  padding-top: 98px;
+}
+
+.my-work h2 {
+  font-size: 48px;
+  text-align: center;
+  line-height: normal;
+}
+
+.case-study {
+  width: 1035px;
+  border: 0.5px solid #232C33;
+  border-radius: 32px;
+  margin-top: 36px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 36px
+}
+
+.thumbnail {
+  width: 463px;
+}
+
+.content {
+  margin-left: 16px;
+  margin-right: 36px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.content h5 {
+  color: #232C33;
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+.content h4 {
+  color: #7E7EE0;
+  font-family: 'ClashDisplay-Medium';
+  font-size: 36px;
+  line-height: normal;
+  margin-top: 12px;
+}
+
+.content p{
+  color: #232C33;
+  margin-top: 12px;
+  margin-bottom: 24px;
+}
+
+.button {
+  border: 0.5px solid #232C33;
+  border-radius: 6px;
+  padding: 8px;
+  text-align: center;
+  width: 200px;
+}
+
+.button a {
+  color: #232C33;
+}
+
+.button a:active {
+  color:#7E7EE0;
+}
+
+/* About Me */
+
+.about-me {
+  border-top: 0.5px solid #232C33;
+  margin-top: 98px;
+  display: flex;
+  flex-direction: row;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 82.5px;
+  padding-right: 82.5px;
+  padding-top: 78px;
+  padding-bottom: 58px;
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.about-me h3 {
+  color: #7E7EE0;
+  font-family: 'ClashDisplay-Semibold';
+  line-height:50px;
+  font-size: 48px;
+  min-width: 250px;
+}
+
+.memoji {
+  width: 200px;
+  position: absolute;
+  left: 230px;
+  bottom: 80px;
+  top: 0px;
+}
+
+.about-me p{
+  margin-left:120px;
+  color: #232C33;
+  font-size: 16px;
+  max-width: 700px;
+}
+
+.about-me p span {
+  color: #232C33;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.about-me .button {
+  width: 220px;
+  position: absolute;
+  left: -38px;
+  bottom: 56px;
+}
+
+/* Footer */
+
+footer {
+  background-color: #232C33;
+  height: 600px;
+}
+
+footer .content {
+  width: 906px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer h2 {
+  color: #F5EFED;
+  font-size: 56px;
+  padding-top: 98px;
+}
+
+footer .content p{
+  color: #F5EFED;
+}
+
+footer .button {
+  border: 0.5px solid #7E7EE0;
+  border-radius: 6px;
+  padding: 8px;
+  text-align: center;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer .button a{
+  color: #7E7EE0;
+}
+
+.social {
+  border-top: 0.5px solid #F5EFED;
+  margin-top: 98px;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.social-links {
+  list-style: none;
+  margin-top: 48px;  
+  text-align: left;
+  padding: 0;
+}
+
+.social-links li {
+  display: inline;
+  margin-right: 32px;
+  padding-right: 32px;
+  border-right: 0.5px solid #F5EFED;
+}
+
+.social-links li:last-child {
+  margin-right: 0;
+  border-right: none;
+}
+
+.copyrights {
+  margin-top: 58px;
+  text-align: right;
+}
+
+.idea-il {
+  height: 159px;
+  position: absolute;
+  left: 40px;
+  top: -150px;
+}
+
+.chat-il {
+  height: 130px;
+  position: absolute;
+  right: 0px;
+  top: -280px;
+}

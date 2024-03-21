@@ -1,0 +1,79 @@
+---
+interface Props {
+	title: string;
+	introduction: boolean;
+}
+
+const { title, introduction } = Astro.props;
+---
+
+<header class={introduction ? 'header withIntro' : 'header'}>
+	<div class="header-left">
+		<div class="logo">
+			<a href="/">
+				Soraia S.
+			</a>
+		</div>
+		{ 
+			introduction ? 
+			<img class="photo" src="/resources/images/Photo.png">
+			<div class="circular-text">
+				<div class="text">
+					<img src="/resources/images/circular-text.svg"  alt="" />	
+				</div>
+				<img src="/resources/images/ss.svg" alt="SS logo" style="padding: 49px 46px;" />
+			</div>
+			: ''
+		}
+	</div>
+	<div class="header-right">
+		<nav>
+			<ul class="menu">
+				<li>
+					<a class="active" href="/">
+						Home
+					</a>
+				</li>
+				<li>
+					<a href="/about.html">
+						About
+					</a>
+				</li>
+				<li>
+					<a href="/my-work.html">
+						My Work
+					</a>
+				</li>
+				<li>
+					<span class="isDisabled">
+						<a href="/blog" aria-disabled="true">
+						Blog (soon)
+						</a>
+					</span>
+				</li>
+			</ul>
+		</nav>
+		
+		{ 
+		introduction ?
+
+		<div class="nome-introduction">
+			<div class="nome">
+				<h2 class="hello-pillshape">Hello, I'm</h2>
+				<h1>
+					<span class="typed-text"></span><span class="cursor">&nbsp;</span>
+					<span class="sr-only">Soraia Soares.</span>
+				</h1>
+			</div>
+			<div class="introduction">
+				<p>A (UX/UI) human-centered designer with a passion for creating impactful user-centric digital experiences.</p>
+			</div>
+		</div>
+		
+		
+		:
+		``
+		}
+
+	</div>
+</header>

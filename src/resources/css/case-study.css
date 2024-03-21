@@ -1,0 +1,581 @@
+/* font family */
+
+@font-face {
+    font-family: 'ClashDisplay-Medium';
+    src: url('/resources/fonts/ClashDisplay-Medium.woff2') format('woff2'),
+         url('/resources/fonts/ClashDisplay-Medium.woff') format('woff');
+         font-weight: 500;
+         font-display: swap;
+         font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'ClashDisplay-Semibold';
+    src: url('/resources/fonts/ClashDisplay-Semibold.woff2') format('woff2'),
+         url('/resources/fonts/ClashDisplay-Semibold.woff') format('woff');
+         font-weight: 600;
+         font-display: swap;
+         font-style: normal;
+  }
+
+@font-face {
+    font-family: 'proxbold';
+    src: url('/resources/fonts/prox-bold-webfont.woff2') format('woff2'),
+         url('/resources/fonts/prox-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'proxregular';
+    src: url('/resources/fonts/prox-regular-webfont.woff2') format('woff2'),
+         url('/resources/fonts/prox-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+ /* Reset */
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    6. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    7. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    8. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  a {
+    color: #232C33;
+    text-decoration: none;
+  }
+
+  span {
+    font-family: 'ClashDisplay-Semibold';
+  }
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  padding-left: 0;
+
+}
+
+/* css */
+
+  * {
+    font-family: 'proxregular', Helvetica, Arial, sans-serif;
+  }
+
+
+.logo, h2, h3 {
+    font-family: 'ClashDisplay-Semibold', serif;
+}
+  
+  
+h2 {
+    color: #232C33;
+    font-size: 36px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h3:hover {
+  color: #7E7EE0;
+}
+
+h4 {
+  color: #232C33;
+  font-size: 18px;
+}
+
+.logo {
+    font-size: 28px;
+    position: absolute;
+    top: 58px;
+}
+  
+p,li {
+    font-size: 18px;
+    color: #232C33;
+  }
+
+p {
+  margin-bottom: 16px;
+}
+
+.circular-text {
+    width: 20%;
+    height: auto; 
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+}
+
+
+.menu {
+    list-style: none;
+    margin-top: 58px;
+    padding-bottom: 58px;
+    width: 500px;
+    padding-left: 0;
+    margin-left: auto;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 48px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+
+a:active {
+  color: #7E7EE0;
+}
+
+.active {
+  color: #7E7EE0;
+  font-weight: bold;
+}
+
+.logo a {
+  color: #232C33;
+  font-family: 'ClashDisplay-Semibold', serif;
+}
+
+span {
+  color: #7E7EE0;
+}
+
+.header {
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  border-bottom: 0.5px solid #232C33;
+
+}
+
+.header-left {
+  position: relative;
+  width: 50%;
+}
+
+.header-right {
+  position: relative;
+  width: 50%;
+}
+
+.active {
+  color: #7E7EE0;
+}
+
+.container{
+  width: 100%;
+  max-width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.case-hero img {
+    border: 0.5px solid #232C33;
+    padding: 36px;
+    border-radius: 32px;
+    margin-top: 48px;
+}
+
+.case-hero h2 {
+    margin-top: 36px;
+}
+
+.case-hero p {
+    margin-bottom: 36px;
+}
+
+.case-summary {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-top: 98px;
+}
+
+.challenge {
+    position: relative;
+    width: 500px;
+    text-align: justify;
+
+}
+
+.challenge p {
+  margin-top: 24px;
+}
+
+.solution {
+    position: relative;
+    width: 699px;
+    padding-left: 100px;
+    text-align: justify;
+}
+
+.solution p {
+  margin-top: 24px;
+}
+
+
+.case-why {
+  margin-top: 98px;
+}
+
+
+.case-why {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.case-text p {
+  width: 750px;
+  text-align: justify;
+}
+
+.case-image {
+  width: 520px;
+  margin-left: 30px;
+}
+
+.case-text p {
+  margin-top: 24px;
+}
+
+.case-goals {
+  margin-top: 98px;
+}
+
+.goals {
+  margin-top: 32px;
+}
+
+.goal-1 {
+  border: 0.5px solid #232C33;
+  border-radius: 16px;
+  margin-bottom: 32px;
+}
+
+.goal-1 h4 {
+  border-bottom: 0.5px solid #232C33;
+  padding: 24px;
+  border-radius: 16px;
+}
+
+.goal-1 p {
+  padding-top: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.goal-2 {
+  border: 0.5px solid #232C33;
+  border-radius: 16px;
+  margin-bottom: 32px;
+}
+
+.goal-2 h4 {
+  border-bottom: 0.5px solid #232C33;
+  padding: 24px;
+  border-radius: 16px;
+}
+
+.goal-2 p {
+  padding-top: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.goal-3 {
+  border: 0.5px solid #232C33;
+  border-radius: 16px;
+  margin-bottom: 32px;
+}
+
+.goal-3 h4 {
+  border-bottom: 0.5px solid #232C33;
+  padding: 24px;
+  border-radius: 16px;
+}
+
+.goal-3 p {
+  padding-top: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+
+.case-jtbd {
+  margin-top: 98px;
+}
+
+.case-text-jtbd p{
+  margin-top: 24px;
+  text-align: justify;
+}
+
+.case-image-jtbd {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin-top: 24px;
+}
+
+.app-flow-draft {
+  width: 250px;
+  height: auto;
+}
+
+.app-flow {
+  width: 80%;
+  height: auto;
+  margin-left: 24px;
+}
+
+
+.case-design {
+  margin-top: 98px;
+}
+
+.case-text-design h4 {
+  margin-top: 24px;
+}
+
+.wireframes {
+  border: 0.5px solid #232C33;
+  border-radius: 16px;
+  margin-bottom: 32px;
+  margin-top: 32px;
+  padding: 16px;
+}
+
+.visual-design {
+  border: 0.5px solid #232C33;
+  border-radius: 16px;
+  margin-bottom: 32px;
+  margin-top: 32px;
+}
+
+
+.case-mockup {
+  margin-top: 98px;
+}
+
+.mockup {
+  border: 0.5px solid #232C33;
+  border-radius: 16px;
+  margin-bottom: 32px;
+  margin-top: 32px;
+  padding: 36px;
+}
+
+.case-prototype {
+  margin-top: 98px;
+}
+
+.prototype {
+  margin-top: 24px;
+}
+
+
+.case-conclusion {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin-top: 98px;
+
+}
+
+.case-text-conclusion {
+  width: 750px;
+  text-align: justify;
+}
+
+.case-image-conclusion {
+  width: 400px;
+  margin-left: 98px;
+  border: 0.5px solid #232C33;
+  border-radius: 16px;
+  margin-bottom: 32px;
+  margin-top: 32px;
+  padding: 36px;
+}
+
+.case-text-conclusion p {
+  margin-top: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+
+footer {
+    background-color: #232C33;
+    height: 600px;
+  }
+  
+  footer a{
+    color: #F5EFED;
+  }
+  
+  #section-footer {
+    font-family: 'ClashDisplay-Medium';
+  }
+  
+  footer .content {
+    width: 906px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  footer h2 {
+    color: #F5EFED;
+    font-size: 56px;
+    padding-top: 112px;
+  }
+  
+  footer .content p{
+    color: #F5EFED;
+    margin-top: 16px;
+  }
+  
+  footer .button {
+    border: 0.5px solid #7E7EE0;
+    border-radius: 6px;
+    padding: 8px;
+    text-align: center;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+  }
+  
+  footer .button a{
+    color: #7E7EE0;
+  }
+  
+  .social {
+    border-top: 0.5px solid #F5EFED;
+    margin-top: 98px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .social-links {
+    list-style: none;
+    margin-top: 48px;  
+    text-align: left;
+    padding: 0;
+  }
+  
+  .social-links a{
+    color: #F5EFED;
+  }
+  
+  .social-links li {
+    display: inline;
+    margin-right: 32px;
+    padding-right: 32px;
+    border-right: 0.5px solid #F5EFED;
+  }
+  
+  .social-links li:last-child {
+    margin-right: 0;
+    border-right: none;
+  }
+  
+  .copyrights {
+    margin-top: 58px;
+    text-align: right;
+    color: #F5EFED;
+  }
+  
+  .illustrations {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+  
+  .idea-il {
+    height: 159px;
+    position: absolute;
+    left: 40px;
+    top: -150px;
+  }
+  
+  .chat-il {
+    height: 130px;
+    position: absolute;
+    right: 0px;
+    top: -280px;
+  }
